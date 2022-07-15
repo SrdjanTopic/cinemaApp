@@ -1,0 +1,36 @@
+@import "../../../utils/variables";
+
+.selectWrapper {
+  display: flex;
+  flex-direction: column;
+
+  .expandButton {
+    margin-top: 10px;
+  }
+
+  .optionsWrapper {
+    margin: 5px;
+    .optionLabelDisplayNone {
+      display: none;
+    }
+    .optionLabelDisplay {
+      background-color: $colorSecondary;
+      padding: 2px;
+      margin: 3px;
+    }
+    .newRowDiv {
+      min-height: 10px;
+    }
+    .addOptionsBtnDisplay {
+      display: block;
+      margin-top: 10px;
+      background-color: $colorSecondary;
+      &:hover {
+        background-color: $colorSecondaryHover;
+      }
+    }
+    .addOptionsBtnDisplayNone {
+      display: none;
+    }
+  }
+}

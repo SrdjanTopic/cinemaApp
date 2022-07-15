@@ -1,0 +1,150 @@
+@import "../../utils/variables";
+
+.deleteScreeningButton {
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+.screeningViewWrapper {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(253, 243, 230);
+  display: flex;
+  flex-direction: row;
+
+  .ticketReservationWrapper {
+    margin-left: 2%;
+    min-width: 25%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .ticketReservationHead {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .screeningDetails {
+      display: flex;
+      flex-direction: column;
+      border: 2px solid black;
+
+      .screeningDetailsHead {
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .screeningDetail {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+    }
+    .tickets {
+      font-size: 25px;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .ticketsHead {
+        margin-left: 5px;
+      }
+
+      .ticketsP {
+        margin-left: 5px;
+        padding: 2px;
+        border: 1px solid black;
+        font-weight: 700;
+      }
+    }
+    .ticketMessageDiv {
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .seatAvailability {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      div {
+        margin-left: 5px;
+        min-width: 50px;
+        max-width: 50px;
+        min-height: 50px;
+        max-height: 50px;
+      }
+
+      .seatAvailable {
+        background-color: $colorSeatAvailable;
+        border: 3px solid black;
+        border-radius: 25%;
+      }
+
+      .seatOccupied {
+        background-color: $colorSeatOccupied;
+        border: 3px solid black;
+        border-radius: 25%;
+      }
+
+      .seatSelected {
+        background-color: $colorSeatSelected;
+        border: 3px solid black;
+        border-radius: 25%;
+      }
+
+      .seatInfo {
+        margin-left: 20px;
+        font-size: larger;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .seatsWrapper {
+    margin-left: 2%;
+    margin-right: 2%;
+    min-width: 70%;
+    min-height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .projectionScreen {
+      margin-top: 10px;
+      margin-bottom: 100px;
+      min-height: 30px;
+      border: 3px solid black;
+      width: 80%;
+      text-align: center;
+      font-weight: 700;
+      padding-top: 5px;
+    }
+
+    .seats {
+      margin-top: 40px;
+      min-width: 100%;
+      min-height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.submitDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

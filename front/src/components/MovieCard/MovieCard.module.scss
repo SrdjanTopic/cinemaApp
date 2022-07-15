@@ -1,0 +1,91 @@
+@import "../../utils/variables";
+
+.cardDiv {
+  min-height: 170px;
+  width: 90%;
+  background-color: rgba(238, 231, 255, 0.904);
+  display: flex;
+  flex-direction: row;
+  border: 3px solid black;
+  margin: 20px;
+  padding: 10px;
+
+  .imageDiv {
+    border: 1px solid black;
+    height: 170px;
+    width: 170px;
+
+    img {
+      text-align: center;
+      min-height: 100%;
+      min-width: 100%;
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .infoDiv {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: fit-content;
+    margin: 10px;
+    justify-content: space-around;
+    justify-items: space-around;
+
+    p {
+      font-size: 20px;
+    }
+
+    .movieName {
+      font-weight: $fontWeightBold;
+    }
+
+    .movieDuration {
+    }
+
+    .movieGenresDiv {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .buttonWrapper {
+    min-height: inherit;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: space-around;
+
+    .btn {
+      height: 40px;
+      width: 80%;
+    }
+  }
+
+  .screeningsWrapper {
+    margin-top: 35px;
+    min-height: 50px;
+    max-height: 50px;
+    min-width: 55%;
+    max-width: 55%;
+    .screenings {
+      min-height: 100%;
+      max-height: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      .screeningDate {
+        margin: 5px;
+        background-color: $colorSecondary;
+        min-width: 50px;
+        .screeningLink {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

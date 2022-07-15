@@ -1,0 +1,52 @@
+.daysWrapper {
+  background-color: aliceblue;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .dateFilter {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid cadetblue;
+    font-weight: 700;
+    cursor: pointer;
+    &:hover {
+      background-color: cadetblue;
+      color: white;
+    }
+  }
+  .dateFilterSelected {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid cadetblue;
+    font-weight: 700;
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+  }
+
+  .letterFilter {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid cadetblue;
+    font-weight: 700;
+    cursor: pointer;
+    &:hover {
+      background-color: cadetblue;
+      color: white;
+    }
+  }
+  .letterFilterSelected {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid cadetblue;
+    font-weight: 700;
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+  }
+}

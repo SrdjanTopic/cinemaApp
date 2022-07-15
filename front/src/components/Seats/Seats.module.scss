@@ -1,0 +1,68 @@
+@import "../../utils/variables";
+
+.wrapper {
+  min-width: 80%;
+  min-height: 80%;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.seatsTable {
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  table-layout: fixed;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.seat {
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px 5px 5px 5px;
+}
+
+.numbers {
+  min-width: 30px;
+  max-width: 30px;
+  padding: 5px 5px 5px 5px;
+}
+
+.alphabet {
+  padding: 5px 5px 5px 5px;
+  font-weight: 700;
+}
+
+.seatDiv {
+  border: 3px solid black;
+  border-radius: 25%;
+  min-width: 50px;
+  max-width: 50px;
+  min-height: 50px;
+  max-height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.availableSeat {
+  background-color: $colorSeatAvailable;
+
+  &:hover {
+    background-color: $colorSeatSelected;
+  }
+}
+
+.occupiedSeat {
+  background-color: $colorSeatOccupied;
+}
+
+.selectedSeat {
+  background-color: $colorSeatSelected;
+}

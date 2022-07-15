@@ -1,0 +1,42 @@
+@import "../../../utils/variables";
+
+.imgButton {
+  appearance: none;
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.primary {
+  background-color: $colorPrimary;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+
+  &:hover {
+    background-color: $colorPrimaryHover;
+  }
+}
+.secondary {
+  background-color: $colorSecondary;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+
+  &:hover {
+    background-color: $colorSecondaryHover;
+  }
+}
+
+.danger {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: $colorDanger;
+  color: white;
+
+  &:hover {
+    background-color: $colorDangerHover;
+  }
+}
